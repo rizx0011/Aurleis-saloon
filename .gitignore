@@ -1,2 +1,5 @@
 node_modules
-node_modules
+dist
+*.tsbuildinfo
+.tempmediaStorage
+.system_generated

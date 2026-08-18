@@ -1,5 +1,10 @@
 {
   "name": "aurelis-salon-workspace",
   "version": "1.0.0",
-  "private": true
+  "private": true,
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
 }

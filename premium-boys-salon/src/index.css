@@ -259,10 +259,7 @@
 .team-head { display: flex; justify-content: space-between; align-items: end; margin-bottom: 48px; }
 .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .team-card { position: relative; }
-.team-photo { aspect-ratio: .82; width: 100%; object-fit: cover; filter: saturate(.63); }
-.team-card:nth-child(1) .team-photo { object-position: center; }
-.team-card:nth-child(2) .team-photo { object-position: 30% center; }
-.team-card:nth-child(3) .team-photo { object-position: 68% center; }
+.team-photo { aspect-ratio: .82; width: 100%; object-fit: cover; object-position: center; filter: saturate(.75); }
 .team-info { display: flex; justify-content: space-between; padding: 17px 0; align-items: start; border-bottom: 1px solid hsl(var(--foreground) / .16); }
 .team-info h3 { font-family: var(--app-font-serif); font-weight: 500; font-size: 25px; margin: 0 0 4px; }
 .team-info p { margin: 0; color: hsl(var(--muted-foreground)); font-family: var(--app-font-mono); font-size: 8px; text-transform: uppercase; letter-spacing: .12em; }

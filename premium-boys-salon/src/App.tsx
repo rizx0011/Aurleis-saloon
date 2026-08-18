@@ -53,9 +53,9 @@ const reviews = [
 ];
 
 const team = [
-  { name: 'Aman Sharma', role: 'Founder · Master Barber', image: '/images/hero-barber.jpg' },
-  { name: 'Vikram Singh', role: 'Senior Stylist · Fade Specialist', image: '/images/gallery-barber.jpg' },
-  { name: 'Rohan Mehta', role: 'Barber · Texture & Beard', image: '/images/gallery-side.jpg' },
+  { name: 'Aman Sharma', role: 'Founder · Master Barber', image: '/images/team-aman.jpg' },
+  { name: 'Vikram Singh', role: 'Senior Stylist · Fade Specialist', image: '/images/team-vikram.jpg' },
+  { name: 'Rohan Mehta', role: 'Barber · Texture & Beard', image: '/images/team-rohan.jpg' },
 ];
 
 function scrollToBooking() {
