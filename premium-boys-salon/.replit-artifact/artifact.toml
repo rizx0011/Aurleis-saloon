@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "AURELIS — Premium Boys Salon"
+description = "A premium, modern men's salon and barbershop website with cinematic visual design, service discovery, haircut style browsing, booking interactions, gallery lightbox, before-and-after comparison, testimonials, and contact information."
+version = "1.0.0"
+id = "artifacts/premium-boys-salon"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24236
+
+[services.development]
+run = "pnpm --filter @workspace/premium-boys-salon run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/premium-boys-salon", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/premium-boys-salon/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24236"
+BASE_PATH = "/"
